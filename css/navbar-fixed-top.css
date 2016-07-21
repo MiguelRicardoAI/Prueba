@@ -1,0 +1,88 @@
+body {
+  min-height: 2000px;
+  padding-top: 50px;
+}
+.navbar-brand2 {
+  transform: translateX(-50%);
+  left: 40%;
+  margin-top: -1%;
+  position: absolute;
+}
+.delay{
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.container2 {
+  margin-right: auto;
+  margin-left: auto;
+}
+.container3 {
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 1%;
+}
+.container4 {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 400px;
+}
+.marco{
+    border: 10px solid #800000;
+    width: 100%;
+}
+.medio{
+	padding-left: 50%;
+}
+.opacity img
+{
+	opacity:0.3;
+}
+.opacity img:hover
+{
+	opacity:1;
+}
+.circle-hov{
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+}
+.circle{
+	width: 100%;
+	height: 100%;
+}
+.blur img
+{
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+}
+
+.blur img:hover
+{
+	filter: blur(0);
+	-webkit-filter: blur(0);
+	-moz-filter: blur(0);
+	-o-filter: blur(0);
+	-ms-filter: blur(0);
+}
+.grayscale img
+{
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+	-ms-filter: grayscale(1);
+}
+
+.grayscale img:hover
+{
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+}
