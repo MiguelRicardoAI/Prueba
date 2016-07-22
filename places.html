@@ -2,9 +2,21 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width">
-<title>CSS Image Zooming Grid</title>
+<title>title</title>
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,900" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+    <!-- Custom styles for this template -->
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!--<script type="text/javascript" src="js/carousel.js" ></script>-->
+    <script type="text/javascript" src="js/alert.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <style type="text/css">
 * {
 	margin: 0;
@@ -109,6 +121,9 @@ hr {
 .zoom-container:hover .zoom-caption {
 	background: none;
 }
+.modal-custom{
+	width: 90%;
+}
 
 @media (max-width: 1199px) {
 	.container {
@@ -136,17 +151,67 @@ hr {
 </head>
 
 <body>
+<!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+       
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Oaxaca <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="places.html">Places</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Meals</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          		<a href="index.html"><img src="images/logo-main.png" class="animated fadeInDown delay navbar-brand2"></a>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          	<li><a href="#about"><span class="glyphicon glyphicon-camera"></span> Images</a></li>
+            <li><a href="#about"><span class="glyphicon glyphicon-facetime-video"></span> Videos</a></li>
+            <li><a href="places.html"><span class="glyphicon glyphicon-map-marker"></span> Places</a></li>
+            <li><a href="#contact" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
 <div class="wrapper">
+<div class="container">
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-custom ">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <img src="images/rings.png" width="20px" height="20px">
+        </div>
+        <div class="modal-body">
+         
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
 	<div class="container">
 		
 		<div class="image-zoom-container">
-			<div class="zoom-container">
+			<div class="zoom-container" data-toggle="modal" data-target="#myModal">
 				<a href="#">
 					<span class="zoom-caption">
 						<h3>Jardin Etnobotánico</h3>
 					</span>
-					<img src="images/places/etno-1.jpg"/>
+					<img src="images/places/e.jpg"/>
 				</a>
 			</div>
 			<div class="zoom-container">
@@ -154,7 +219,7 @@ hr {
 					<span class="zoom-caption">
 						<h3>Casa dos lagos</h3>
 					</span>
-					<img src="images/places/casa.jpg" />
+					<img src="images/places/c.jpg" />
 				</a>
 			</div>
 			<div class="zoom-container">
@@ -162,7 +227,7 @@ hr {
 					<span class="zoom-caption">
 						<h3>Jardin don luis</h3>
 					</span>
-					<img src="images/places/firenza-001.jpg" />
+					<img src="images/places/j.jpg" />
 				</a>
 			</div>
 			<div class="zoom-container">
@@ -170,7 +235,7 @@ hr {
 					<span class="zoom-caption">
 						<h3>Hotel Quinta Real</h3>
 					</span>
-					<img src="images/places/zermatt-001.jpg" />
+					<img src="images/places/q.jpg" />
 				</a>
 			</div>
 			<div class="zoom-container">
@@ -178,7 +243,7 @@ hr {
 					<span class="zoom-caption">
 						<h3>Jardin San Felipe</h3>
 					</span>
-					<img src="images/places/cinque-terre-001.jpg" />
+					<img src="images/places/js.jpg" />
 				</a>
 			</div>
 			<div class="zoom-container">
@@ -186,7 +251,7 @@ hr {
 					<span class="zoom-caption">
 						<h3>Rancho el Cristo</h3>
 					</span>
-					<img src="images/places/vincenza-001.jpg" />
+					<img src="images/places/r.jpg" />
 				</a>
 			</div>
 			<div class="zoom-container">
@@ -194,7 +259,7 @@ hr {
 					<span class="zoom-caption">
 						<h3>Jardin Las Virgenes</h3>
 					</span>
-					<img src="images/places/puerta-vallarta-001.jpg" />
+					<img src="images/places/jv.jpg" />
 				</a>
 			</div>
 			<div class="zoom-container">
@@ -202,7 +267,7 @@ hr {
 					<span class="zoom-caption">
 						<h3>Jardin la Calera</h3>
 					</span>
-					<img src="images/places/munich-001.jpg" />
+					<img src="images/places/jc.jpg" />
 				</a>
 			</div>
 			<div class="zoom-container">
@@ -210,7 +275,7 @@ hr {
 					<span class="zoom-caption">
 						<h3>Casa Chata</h3>
 					</span>
-					<img src="images/places/roma-001.jpg" />
+					<img src="images/places/cc.jpg" />
 				</a>
 			</div>
 		</div>
