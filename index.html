@@ -7,9 +7,9 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
+    <!--Imagen logo-->>
     <link rel="icon" href="../../favicon.ico">
-
-    <title>Fixed Top Navbar Example for Bootstrap</title>
+    <title>Wedding Planner</title>
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
@@ -17,14 +17,10 @@
     <link href="css/navbar-fixed-top.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-    <!--<script type="text/javascript" src="js/carousel.js" ></script>-->
-    <script type="text/javascript" src="js/alert.js" ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    
-
-
+    <!--<script type="text/javascript" src="js/carousel.js" ></script>-->
+    <script type="text/javascript" src="js/theme.js" ></script>
   </head>
 
   <body>
@@ -32,7 +28,6 @@
     <!-- Fixed navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
-       
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
@@ -40,15 +35,15 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Oaxaca <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="places.html">Places</a></li>
-                <li><a href="#">Hotels</a></li>
-                <li><a href="#">Meals</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="art.html">Art</a></li>
                 <li role="separator" class="divider"></li>
                 <li class="dropdown-header">Nav header</li>
                 <li><a href="#">Separated link</a></li>
                 <li><a href="#">One more separated link</a></li>
               </ul>
             </li>
-          		<img src="images/logo-main.png" class="animated fadeInDown delay navbar-brand2 ">
+          		<img src="images/logo-main.png" class="animated fadeInDown delay navbar-brand2 img-responsive">
           </ul>
           <ul class="nav navbar-nav navbar-right">
           	<li><a href="images.html"><span class="glyphicon glyphicon-camera"></span> Images</a></li>
@@ -60,43 +55,54 @@
       </div>
     </nav>
 
-<div class="container">
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <img src="images/rings.png" class="animated flip" width="20px" height="20px">
+    <div class="container">
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <img src="images/rings.png" class="animated flip" width="20px" height="20px">
+              Contact With Us
+            </div>
+            <div class="modal-body">
+              <form class="form-horizontal">
+                <p><input type="email" class="form-control" id="inputName" placeholder="Name"></p>
+                <p><input type="password" class="form-control" id="inputMail" placeholder="Email"></p>
+                <p><textarea class="form-control" rows="3" placeholder="Comment"></textarea></p>
+                <button type="submit" class="btn btn-info btn-lg btn-block">Sign in</button>
+                <div>
+                  <p class="quick">Direction : </p> Center Oaxaca  
+                </div>
+              </form>
+            </div>
+            <div class="modalfooter-custom">
+              <img src="images/media/p.png" class="img-media animated bounce delay-s1" alt="pinterest">
+              <img src="images/media/f.png" class="img-media animated bounce delay-s2" alt="facebook">
+              <img src="images/media/t.png" class="img-media animated bounce delay-s3" alt="twitter">
+              <img src="images/media/y.png" class="img-media animated bounce delay-s4" alt="youtube">
+              <img src="images/media/i.png" class="img-media animated bounce delay-s5" alt="instagram">
+            </div>
+          </div> 
         </div>
-        <div class="modal-body">
-          <form class="form-horizontal">
-        <p><input type="email" class="form-control" id="inputName" placeholder="Name"></p>
-      <p><input type="password" class="form-control" id="inputMail" placeholder="Email"></p>
-      <p><textarea class="form-control" rows="3" placeholder="Comment"></textarea></p>
-      <button type="submit" class="btn btn-info btn-lg btn-block">Sign in</button>
-        </form>
-        </div>
-        <div class="modalfooter-custom">
-            <img src="images/media/p.png" class="img-media animated bounce delay-s1" alt="pinterest">
-            <img src="images/media/f.png" class="img-media animated bounce delay-s2" alt="facebook">
-            <img src="images/media/t.png" class="img-media animated bounce delay-s3" alt="twitter">
-            <img src="images/media/y.png" class="img-media animated bounce delay-s4" alt="youtube">
-            <img src="images/media/i.png" class="img-media animated bounce delay-s5" alt="instagram">
-        </div>
-      </div> 
+      </div>
     </div>
-  </div>
-</div>
 
     <div class="container2 item">
-      <!-- Main component for a primary marketing message or call to action -->
-      <img src="images/4-1.png" class="img-responsive" alt="Cinque Terre" width="100%" height="50%"> 
+      <!--Banner de imagen-->
+      <div id="image_banner">
+        <div id="banner">
+          <img src="images/places/1.jpg" class="img-responsive" alt="Cinque Terre" width="100%" height="50%">
+          <img src="images/places/2.jpg" class="img-responsive" alt="Cinque Terre" width="100%" height="50%">
+          <img src="images/places/3.jpg" class="img-responsive" alt="Cinque Terre" width="100%" height="50%">
+          <img src="images/places/4.jpg" class="img-responsive" alt="Cinque Terre" width="100%" height="50%">
+        </div>
+      </div>
     </div> <!-- /container -->
 
     <div class="container3">
-    	<div >
+    	<div>
     		<div class="animated infinite bounce medio">
     			<img src="images/couple.png" width="80px" height="80px">
     		</div>
@@ -109,122 +115,113 @@
       <div class="divright"><img class="left animated infinite fadeInRight delay2" src="images/man.png" width="80px" height="80px"></div>
     </div>
 
-    <div class="container5">
-      <div class=" circle-hov">
-          <a href=""><img src="images/i1.jpg" alt="UNO" class="img-circle" width="200px" height="200px"></a>
+    <!--Claros-->
+    <div class="container4">
+      <div class="col-xs-2">
+          <img src="images/i1.png" alt="uno" class="img-circle img-responsive" />
       </div>
-      <div class=" circle-hov">
-          <img src="images/i2.png" alt="..." class="img-circle" width="200px" height="200px">
-    </div>
-    <div class=" circle-hov">
-          <img src="images/i3.jpg" alt="..." class="img-circle" width="200px" height="200px"> 
-    </div>
-    <div class=" circle-hov">
-        <img src="images/i4.jpg" alt="..." class="img-circle" width="200px" height="200px">
-    </div>
-    <div class=" circle-hov">
-        <img src="images/i5.jpg" alt="..." class="img-circle" width="200px" height="200px">
-    </div>
-    <div class=" circle-hov">
-        <img src="images/i6.jpg" alt="..." class="img-circle" width="200px" height="200px">
-    </div>
-    <div class=" circle-hov">
-        <img src="images/i7.jpg" alt="..." class="img-circle" width="200px" height="200px">
-    </div>
+      <div class="col-xs-2">
+          <img src="images/i2.png" alt="dos" class="img-circle img-responsive"/>
+      </div>
+      <div class="col-xs-2">
+          <img src="images/i3.png" alt="tres" class="img-circle img-responsive" /> 
+      </div>
+      <div class="col-xs-2">
+        <img src="images/i4.png" alt="cuatro" class="img-circle img-responsive"/>
+      </div>
+      <div class="col-xs-2">
+        <img src="images/i5.png" alt="cinco" class="img-circle img-responsive"/>
+      </div>
+      <div class="col-xs-2">
+        <img src="images/i6.png" alt="seis" class="img-circle img-responsive"/>
+      </div>
     </div>
 
+    <!--Opacos--> 
     <div class="container4">
-    	<div class="opacity circle-hov">
-      		<a href=""><img src="images/i1.jpg" alt="UNO" class="img-circle" width="200px" height="200px"></a>
+      <div class="col-xs-2 opacity">
+          <img src="images/i1.png" alt="uno" class="img-circle img-responsive" />
           <h2 class="alex" >Boda Alex Branch</h2> 
-    	</div>
-    	<div class="opacity circle-hov">
-      		<img src="images/i2.png" alt="..." class="img-circle" width="200px" height="200px">
-          <h2 class="alex" >Boda Alex Branch </h2> 
-		</div>
-		<div class="opacity circle-hov">
-      		<img src="images/i3.jpg" alt="..." class="img-circle" width="200px" height="200px">	
-          <h2 class="alex" >Boda Josefin Slab</h2> 
-		</div>
-    <div class="opacity circle-hov">
-      	<img src="images/i4.jpg" alt="..." class="img-circle" width="200px" height="200px">
-        <h2 class="alex" >Boda Josefin Slab</h2> 
-    </div>
-    <div class="opacity circle-hov">
-      	<img src="images/i5.jpg" alt="..." class="img-circle" width="200px" height="200px">
-        <h2 class="alex" >Boda Josefin Slab</h2> 
-    </div>
-    <div class="opacity circle-hov">
-      	<img src="images/i6.jpg" alt="..." class="img-circle" width="200px" height="200px">
-        <h2 class="alex" >Boda Josefin Slab</h2> 
-    </div>
-    <div class="opacity circle-hov">
-      	<img src="images/i7.jpg" alt="..." class="img-circle" width="200px" height="200px">
-        <h2 class="alex" >Boda Josefin Slab</h2> 
-    </div>
+      </div>
+      <div class="col-xs-2 opacity">
+          <img src="images/i2.png" alt="dos" class="img-circle img-responsive"/>
+          <h2 class="alex" >Boda Alex Branch</h2> 
+      </div>
+      <div class="col-xs-2 opacity">
+          <img src="images/i3.png" alt="tres" class="img-circle img-responsive" /> 
+          <h2 class="alex" >Boda Alex Branch</h2> 
+      </div>
+      <div class="col-xs-2 opacity">
+        <img src="images/i4.png" alt="cuatro" class="img-circle img-responsive"/>
+          <h2 class="alex" >Boda Alex Branch</h2> 
+      </div>
+      <div class="col-xs-2 opacity">
+        <img src="images/i5.png" alt="cinco" class="img-circle img-responsive"/>
+          <h2 class="alex" >Boda Alex Branch</h2> 
+      </div>
+      <div class="col-xs-2 opacity">
+        <img src="images/i6.png" alt="seis" class="img-circle img-responsive"/>
+          <h2 class="alex" >Boda Alex Branch</h2> 
+      </div>
     </div>
 
+    <!--Borrosos--> 
     <div class="container4">
-      <div class="blur circle-hov">
-          <a href=""><img src="images/i1.jpg" alt="UNO" class="img-circle" width="200px" height="200px"></a>
-          <h2 class="quick" >Boda Alex Branch</h2> 
+      <div class="col-xs-2 blur">
+          <img src="images/i1.png" alt="uno" class="img-circle img-responsive" />
+          <h2 class="alex" >Boda Alex Branch</h2> 
       </div>
-      <div class="blur circle-hov">
-          <img src="images/i2.png" alt="..." class="img-circle" width="200px" height="200px">
-          <h2 class="quick" >Boda Quick Sand </h2> 
-    </div>
-    <div class="blur circle-hov">
-          <img src="images/i3.jpg" alt="..." class="img-circle" width="200px" height="200px"> 
-          <h2 class="quick" >Boda Josefin Slab</h2> 
-    </div>
-    <div class="blur circle-hov">
-        <img src="images/i4.jpg" alt="..." class="img-circle" width="200px" height="200px">
-        <h2 class="quick" >Boda Josefin Slab</h2> 
-    </div>
-    <div class="blur circle-hov">
-        <img src="images/i5.jpg" alt="..." class="img-circle" width="200px" height="200px">
-        <h2 class="quick" >Boda Josefin Slab</h2> 
-    </div>
-    <div class="blur circle-hov">
-        <img src="images/i6.jpg" alt="..." class="img-circle" width="200px" height="200px">
-        <h2 class="quick" >Boda Josefin Slab</h2> 
-    </div>
-    <div class="blur circle-hov">
-        <img src="images/i7.jpg" alt="..." class="img-circle" width="200px" height="200px">
-        <h2 class="quick" >Boda Josefin Slab</h2> 
-    </div>
+      <div class="col-xs-2 blur">
+          <img src="images/i2.png" alt="dos" class="img-circle img-responsive"/>
+          <h2 class="alex" >Boda Alex Branch</h2> 
+      </div>
+      <div class="col-xs-2 blur">
+          <img src="images/i3.png" alt="tres" class="img-circle img-responsive" /> 
+          <h2 class="alex" >Boda Alex Branch</h2> 
+      </div>
+      <div class="col-xs-2 blur">
+        <img src="images/i4.png" alt="cuatro" class="img-circle img-responsive"/>
+          <h2 class="alex" >Boda Alex Branch</h2> 
+      </div>
+      <div class="col-xs-2 blur">
+        <img src="images/i5.png" alt="cinco" class="img-circle img-responsive"/>
+          <h2 class="alex" >Boda Alex Branch</h2> 
+      </div>
+      <div class="col-xs-2 blur">
+        <img src="images/i6.png" alt="seis" class="img-circle img-responsive"/>
+          <h2 class="alex" >Boda Alex Branch</h2> 
+      </div>
     </div>
 
+    <!--Escalagris--> 
     <div class="container4">
-      <div class="grayscale circle-hov" id="some-div">
-          <a href=""><img src="images/i1.jpg" alt="UNO" class="img-circle" width="200px" height="200px"></a>
-          <h2 id="some-element" class="josef" >Boda Alex Branch</h2> 
+      <div class="col-xs-2 grayscale">
+          <img src="images/i1.png" alt="uno" class="img-circle img-responsive" />
+          <h2 class="alex" >Boda Alex Branch</h2> 
       </div>
-      <div class="grayscale circle-hov">
-          <img src="images/i2.png" alt="..." class="img-circle" width="200px" height="200px">
-          <h2 class="josef" >Boda Quick Sand </h2> 
+      <div class="col-xs-2 grayscale">
+          <img src="images/i2.png" alt="dos" class="img-circle img-responsive"/>
+          <h2 class="alex" >Boda Alex Branch</h2> 
+      </div>
+      <div class="col-xs-2 grayscale">
+          <img src="images/i3.png" alt="tres" class="img-circle img-responsive" /> 
+          <h2 class="alex" >Boda Alex Branch</h2> 
+      </div>
+      <div class="col-xs-2 grayscale">
+        <img src="images/i4.png" alt="cuatro" class="img-circle img-responsive"/>
+          <h2 class="alex" >Boda Alex Branch</h2> 
+      </div>
+      <div class="col-xs-2 grayscale">
+        <img src="images/i5.png" alt="cinco" class="img-circle img-responsive"/>
+          <h2 class="alex" >Boda Alex Branch</h2> 
+      </div>
+      <div class="col-xs-2 grayscale">
+        <img src="images/i6.png" alt="seis" class="img-circle img-responsive"/>
+          <h2 class="alex" >Boda Alex Branch</h2> 
+      </div>
     </div>
-    <div class="grayscale circle-hov">
-          <img src="images/i3.jpg" alt="..." class="img-circle" width="200px" height="200px"> 
-          <h2 class="josef" >Boda Josefin Slab</h2> 
-    </div>
-    <div class="grayscale circle-hov">
-        <img src="images/i4.jpg" alt="..." class="img-circle" width="200px" height="200px">
-        <h2 class="josef" >Boda Josefin Slab</h2> 
-    </div>
-    <div class="grayscale circle-hov">
-        <img src="images/i5.jpg" alt="..." class="img-circle" width="200px" height="200px">
-        <h2 class="josef" >Boda Josefin Slab</h2> 
-    </div>
-    <div class="grayscale circle-hov">
-        <img src="images/i6.jpg" alt="..." class="img-circle" width="200px" height="200px">
-        <h2 class="josef" >Boda Josefin Slab</h2> 
-    </div>
-    <div class="grayscale circle-hov">
-        <img src="images/i7.jpg" alt="..." class="img-circle " width="200px" height="200px">
-        <h2 class="josef" >Boda Josefin Slab</h2> 
-    </div>
-    </div>
+
+    
 
   </body>
 </html>

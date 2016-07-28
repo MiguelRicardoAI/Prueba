@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
+
 <meta name="viewport" content="width=device-width">
 <title>title</title>
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,900" rel="stylesheet" type="text/css">
@@ -11,143 +13,17 @@
     <!-- Custom styles for this template -->
     <link href="css/navbar-fixed-top.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
+    <link href="css/travel.css" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
     <!--<script type="text/javascript" src="js/carousel.js" ></script>-->
     <script type="text/javascript" src="js/alert.js" ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<style type="text/css">
-* {
-	margin: 0;
-	padding: 0;
-}
-body {
-	background-color: black;
-	font-family: 'Helvetica Neue', arial, sans-serif;
-	font-weight: 200;
-}
-
-h1 {
-	font-family: 'font-family: 'Source Sans Pro', sans-serif;', sans-serif;
-	font-size: 4em;
-	font-weight: 900;
-	letter-spacing: -3px;
-	margin: 0 0 20px;
-	text-align: center;
-	text-shadow: 1px 1px 0 #fff, 2px 2px 0 #bbb;
-}
-hr {
-	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #fff;
-	margin: 25px 0;
-	clear: both;
-}
-.centered {
-	text-align: center;
-}
-.wrapper {
-	width: 100%;
-	padding: 30px 0;
-}
-.container {
-	width: 1200px;
-	margin: 0 auto;
-}
-
-/* ---------- Zoom container ---------- */
-.image-zoom-container {
-	list-style: none;
-	font-size: 0px;
-}
-.zoom-container {
-	position: relative;
-	overflow: hidden;
-	display: inline-block;
-	width: 33.33%; /* this value + 2 should = 33% */
-	font-size: 16px;
-	font-size: 1rem;
-	border: 1px solid #fff;
-	vertical-align: top;
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-}
-.zoom-container img {
-	display: block;
-	width: 100%;
-	height: auto;
-	-webkit-transition: all .5s ease; /* Safari and Chrome */
-    -moz-transition: all .5s ease; /* Firefox */
-    -ms-transition: all .5s ease; /* IE 9 */
-    -o-transition: all .5s ease; /* Opera */
-    transition: all .5s ease;
-}
-.zoom-container .zoom-caption {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: 10;
-	background: rgba(0, 0, 0, .5);
-	-webkit-transition: all .5s ease; /* Safari and Chrome */
-    -moz-transition: all .5s ease; /* Firefox */
-    -ms-transition: all .5s ease; /* IE 9 */
-    -o-transition: all .5s ease; /* Opera */
-    transition: all .5s ease;
-}
-.zoom-container .zoom-caption h3 {
-	display: block;
-	text-align: center;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 1.5em;
-	font-weight: 900;
-	letter-spacing: -1px;
-	text-transform: uppercase;
-	color: #fff;
-	margin: 23% 0 0;
-	padding: 10px 0;
-	border-top: 5px solid rgba(255, 255, 255, .15);
-	border-bottom: 5px solid rgba(255, 255, 255, .15);
-}
-.zoom-container:hover img {
-	-webkit-transform:scale(1.25); /* Safari and Chrome */
-    -moz-transform:scale(1.25); /* Firefox */
-    -ms-transform:scale(1.25); /* IE 9 */
-    -o-transform:scale(1.25); /* Opera */
-     transform:scale(1.25);
-}
-.zoom-container:hover .zoom-caption {
-	background: none;
-}
-.modal-custom{
-	width: 90%;
-}
-
-@media (max-width: 1199px) {
-	.container {
-		width: auto;
-		padding: 0 10px;
-	}
-}
-
-@media (max-width: 767px) {
-
-	.zoom-container {
-		width: 50%;
-	}
-
-}
-
-@media (max-width: 480px) {
-	
-	.zoom-container {
-		width: 100%;
-	}
-	
-}
-</style>
+    <style type="text/css">
+    	body{
+    		background-color: black;
+    	}
+    </style>
 </head>
 
 <body>
@@ -162,8 +38,8 @@ hr {
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Oaxaca <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="places.html">Places</a></li>
-                <li><a href="#">Hotels</a></li>
-                <li><a href="#">Meals</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="art.html">Art</a></li>
                 <li role="separator" class="divider"></li>
                 <li class="dropdown-header">Nav header</li>
                 <li><a href="#">Separated link</a></li>
@@ -173,7 +49,7 @@ hr {
           		<a href="index.html"><img src="images/logo-main.png" class="animated fadeInDown delay navbar-brand2"></a>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-          	<li><a href="#about"><span class="glyphicon glyphicon-camera"></span> Images</a></li>
+          	<li><a href="images.html"><span class="glyphicon glyphicon-camera"></span> Images</a></li>
             <li><a href="#about"><span class="glyphicon glyphicon-facetime-video"></span> Videos</a></li>
             <li><a href="places.html"><span class="glyphicon glyphicon-map-marker"></span> Places</a></li>
             <li><a href="#contact" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
@@ -183,26 +59,39 @@ hr {
     </nav>
 
 <div class="wrapper">
-<div class="container">
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-custom ">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <img src="images/rings.png" width="20px" height="20px">
+	<div class="container">
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <img src="images/rings.png" class="animated flip" width="20px" height="20px">
+              Contact With Us
+            </div>
+            <div class="modal-body">
+              <form class="form-horizontal">
+                <p><input type="email" class="form-control" id="inputName" placeholder="Name"></p>
+                <p><input type="password" class="form-control" id="inputMail" placeholder="Email"></p>
+                <p><textarea class="form-control" rows="3" placeholder="Comment"></textarea></p>
+                <button type="submit" class="btn btn-info btn-lg btn-block">Sign in</button>
+                <div>
+                  <p class="quick">Direction : </p> Center Oaxaca  
+                </div>
+              </form>
+            </div>
+            <div class="modalfooter-custom">
+              <img src="images/media/p.png" class="img-media animated bounce delay-s1" alt="pinterest">
+              <img src="images/media/f.png" class="img-media animated bounce delay-s2" alt="facebook">
+              <img src="images/media/t.png" class="img-media animated bounce delay-s3" alt="twitter">
+              <img src="images/media/y.png" class="img-media animated bounce delay-s4" alt="youtube">
+              <img src="images/media/i.png" class="img-media animated bounce delay-s5" alt="instagram">
+            </div>
+          </div> 
         </div>
-        <div class="modal-body">
-         
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div> 
+      </div>
     </div>
-  </div>
-</div>
 	<div class="container">
 		
 		<div class="image-zoom-container">
